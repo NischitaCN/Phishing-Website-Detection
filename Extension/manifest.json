@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "PhishSentry",
+    "version": "1.0",
+    "icons": {
+        "128": "assets/images/virus.png",
+        "16": "assets/images/virus.png",
+        "48": "assets/images/virus.png" },
+    "description": "Displays the current URL of the active tab.",
+    "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+    "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "tabs",
+    "<all_urls>"
+    ],
+    "browser_action": {
+        "default_popup": "popup.html"
+    }
+}
+
+
